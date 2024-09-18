@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <nav>
+        <div class="container">
+          <img src="assets/img/TestLogo.svg" alt="" class="left-nav logo" />
+          <img src="assets/img/menu (2).svg" id="menu-icon" alt="" />
+          <div class="rest-nav active hide">
+            <div class="center-nav nav-list">
+              <ul>
+                <li>
+                  <img
+                    src="assets/img/home_FILL0_wght300_GRAD0_opsz24.svg"
+                    alt=""
+                  />
+                  Overview
+                </li>
+                <li>
+                  <img
+                    src="assets/img/group_FILL0_wght300_GRAD0_opsz24.svg"
+                    alt=""
+                  />
+                  Patients
+                </li>
+                <li>
+                  <img
+                    src="assets/img/calendar_today_FILL0_wght300_GRAD0_opsz24.svg"
+                    alt=""
+                  />
+                  Schedule
+                </li>
+                <li>
+                  <img
+                    src="assets/img/chat_bubble_FILL0_wght300_GRAD0_opsz24.svg"
+                    alt=""
+                  />
+                  Message
+                </li>
+                <li>
+                  <img
+                    src="assets/img/credit_card_FILL0_wght300_GRAD0_opsz24.svg"
+                    alt=""
+                  />
+                  Transactions
+                </li>
+              </ul>
+            </div>
+
+            <div class="right-nav nav-list">
+              <div class="inner-right inner">
+                <img
+                  src="assets/img//senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc@2x.png"
+                  width="40"
+                  height="40"
+                  alt=""
+                />
+                <span>
+                  <small> <b> Dr Joe Simmons </b></small>
+                  <small>General Practitioner</small>
+                </span>
+              </div>
+              <span class="inner-right-2 inner">
+                <img
+                  src="assets/img//settings_FILL0_wght300_GRAD0_opsz24.svg"
+                  alt=""
+                />
+                <img
+                  src="assets/img//more_vert_FILL0_wght300_GRAD0_opsz24.svg"
+                  alt=""
+                />
+              </span>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section>
+        <div class="left-section">
+          <div class="top">
+            <p>Patients</p>
+            <img
+              src="assets/img/search_FILL0_wght300_GRAD0_opsz24.svg"
+              alt=""
+            />
+          </div>
+
+          <div class="bottom">
+            <div class="loaderparent hideloader">
+              <div class="loader"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="center-sec">
+        <h3><b> Diagnosis History</b></h3>
+        <div class="chart-sec">
+          <div class="outerChart">
+            <div class="leftInnerchart">
+              <div class="top-chart">
+                <h4>Blood Pressure</h4>
+                <p>
+                  Last 6 Months
+                  <img
+                    src="assets/img/expand_more_FILL0_wght300_GRAD0_opsz24.svg"
+                    alt=""
+                  />
+                </p>
+              </div>
+              <div class="chart">
+                <canvas id="myChart"></canvas>
+              </div>
+            </div>
+            <div id="rightChart">
+              <div class="systolic">
+                <p><span class="circle1"></span> <span> Systolic</span></p>
+                <h3 id="systolic_value"></h3>
+                <small>
+                  <div id="systolic_image"></div>
+                  <span id="systolic_level"> </span>
+                </small>
+              </div>
+
+              <hr class="line" />
+
+              <div class="distolic">
+                <p><span class="circle1"></span> <span> Distolic</span></p>
+                <h3 class="value" id="distolic_value"></h3>
+                <small>
+                  <div id="distolic_image"></div>
+                  <span id="distolic_level"> </span>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info-sec" id="info-sec"></div>
+      </section>
+      <section class="right">
+        <img
+          src=""
+          alt="profile image"
+          width="200"
+          height="200"
+          class="center-img"
+          id="profile_image"
+        />
+        <h4 id="profile_name"></h4>
+
+        <div class="loaderparent hideloader">
+          <div class="loader"></div>
+        </div>
+        <div class="profile-section" id="profile_section"></div>
+
+        <button class="show-info">Show Information</button>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./assets/scripts/script.js"></script>
+  </body>
+</html>
